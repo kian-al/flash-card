@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Card</title>
+</head>
+<body>
+    <div class="workspace">
+        <div class="container">
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./list.html">List</a>
+            </div>
+        </div>
+        <div class="flash-shows">
+            <div class="item" id="flash-card">
+                <form action="">
+                    <label for="en-word">EN word :</label><br>
+                    <input type="text" id="en-word" autofocus><br>
+                    <label for="fa-word">FA word :</label><br>
+                    <input type="text" id="fa-word"><br>
+                    <label for="description">example description :</label><br>
+                    <input type="text" id="description"><br>
+                </form>
+            </div>
+        </div>
+        <div class="buttons">
+            <button>next</button>
+            <button onclick="saveData()" id="confirm">confirm</button>
+
+        </div>
+    </div>
+    <div id="customAlertBox" class="custom-alert">
+        <div class="custom-alert-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src=
+        "https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    </script>
+</body>
+</html>

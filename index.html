@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Card</title>
+</head>
+<body onload="flashCard()">
+    <div class="workspace">
+        <div class="container">
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./list.html">List</a>
+            </div>
+        </div>
+        
+        <div class="flash-shows">
+            <div class="item" id="flash-card">
+                
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="back-card">Back</button>
+            <button><a href="./create_card.html">create card</a></button>
+            <div class="button-ans">
+                <button>show answer</button>
+            </div>
+            <button id="next-card">Next</button>
+        </div>
+        
+    </div>
+    <div id="customAlertBox" class="custom-alert">
+        <div class="custom-alert-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
